@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Société d’horticulture et d’écologie de Dorval | Jardin de démonstration de pollinisation</title>
+<meta charset="UTF-8">
+<meta name="description" content="La Société d’horticulture et d’écologie de Dorval (SHED)  a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="shortcut icon" href="../images/rose.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* unvisited link */
+p a:link {
+  color: teal;
+}
+
+/* visited link */
+p a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+p  a:hover {
+  color: DarkSlateGrey;
+}
+
+/* selected link */
+p  a:active {
+  color: DarkSlateBlue;
+}
+</style>
+</head>
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fermez
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+  <a href="executif.html" class="w3-bar-item w3-button">Exécutif</a>
+    <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+  <a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	  <a href="../en/native-plants.html" class="w3-bar-item w3-button">English</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>SHED</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="À propos de la SHED">À propos<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos de notre club</a>
+      <a href="apropos.html#history" class="w3-bar-item w3-button">Histoire</a>
+	  <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	  <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+    </div>
+  </div>
+  <a href="evenements.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Événements</a>
+  <a href="nouvelles.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nous joindre</a>
+	<a href="../en/native-plants.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">English</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+    <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	<a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+	<a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+    <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	<a href="../en/native-plants.html" class="w3-bar-item w3-button">English</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../images/banner-2500x1665-19.jpg" alt="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL" style="width:100%;min-height:350px;max-height:800px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL">SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onClick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Société d’horticulture et d’écologie de Dorval</h4>
+     
+    </header><div class="w3-container">
+	 <h5>Notre objectif</h5>
+      <p>La Société a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.</p>
+      <p>Lisez notre <a href="../documents/constitution-dhes-shed-fr.pdf" target="_blank">constitution</a> ou téléchargez notre <a href="../documents/dhes-shed-brochure.pdf" target="_blank">brochure</a> pour en savoir plus sur la SHED.</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>&copy; SHED</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="w3-container w3-padding-24 w3-left" id="main">
+<h2 align="center" class="w3-text-teal">JARDIN DE DÉMONSTRATION DE POLLINISATION </h2>
+  <h3 align="center" class="w3-cursive">Pour commémorer le 70e anniversaire du club </h3>
+  <div class="w3-row"><br>
+    <h3>novembre 2024</h3>
+    <div class="w3-half w3-padding-small">
+ 
+  <p>Le 30 octobre 2024 la Cité de Dorval a creusé notre parcelle et l'a préparé pour la plantation. Comme les lutins du Père Noël, l'équipe du Jardin de pollinisateurs a été occupée à élaborer une liste de plantes indigènes à planter, en tenant compte 
+de la hauteur et la couleur. De plus, une belle maquette de panneau a été créée, et est en attente d'approbation par la ville.</p>
+  <p><a href="../documents/dhes-pollinator-garden-november-2024.pdf" target="_blank" class="w3-button w3-teal w3-padding-large">Téléchargez le PDF</a></p>
+	
+</div>
+
+<div class="w3-half w3-padding-small">
+<img src="../images/p-garden-team-nov-2024-600x373.jpg" alt="Dorval Garden Team" style="width:100%">
+  <p>Dave Charron, le jardinier en chef de la Cité de Dorval </p>
+  <img src="../images/p-garden-plot-nov-2024-600x300.jpg" alt="Pollinator Garden Plot" style="width:100%">
+<p>La Cité de Dorval a creusé notre parcelle et l'a préparé pour la plantation.</p>
+</div>
+<div class="w3-panel w3-border-bottom"> </div>
+  <h3>octobre 2024</h3>
+  <div class="w3-half w3-padding-small">
+
+  <p>Nous sommes ravis d’annoncer que ce projet progresse bien. Pour cartographier notre site, Catherine a rencontré Dave Charron, jardinier en chef de Dorval.
+Le projet s’est vu attribuer généreusement un grand espace au parc Lawrence Earl (à l’ouest de St-Louis), le long du bord du lac, sur lequel Catherine et Anna ont délimité une élégante parcelle en forme de rein.</p>
+  <p>Veuillez informer Anna  (<a href="mailto:atrosich@videotron.ca">atrosich@videotron.ca</a>) si vous avez des plantes à donner au pour ce projet. Nous recherchons particulièrement des plantes indigènes (voir la liste ci-dessous) qui prospèrent en plein soleil et dans des conditions d’humidité moyenne, qui ne se 
+propagent pas trop agressivement et qui conviennent à une palette de couleurs violet/jaune/blanc. Nous accueillerions également avec plaisir des dons de bois flotté ou autres éléments structurels naturels.</p>
+  <h4>Les plantes recherchées comprennent&nbsp;: </h4>
+  <ul>
+    <li>Asters</li>
+    <li>Eupatoire perfoliée / Boneset (<em>Eupatorium perfoliatum</em>)</li>
+    <li>Pimprenelle canadienne / Canadian Burnet </li>
+    <li>Onagre / Evening Primrose</li>
+    <li>Faux tournesol / False Sunflower</li>
+    <li>Hysope / Hyssop</li>
+    <li>Joe Pye</li>
+    <li>Monarde / Monarda</li>
+    <li>Immortelle nacrée / Pearly Everlasting </li>
+    <li>Rudbeckies / Rudbeckia </li>
+    <li>Verveine bleue / Blue Vervain</li>
+    <li>Achillée /  Yarrow</li>
+  </ul>
+	
+	<p><a href="../documents/dhes-pollinator-garden-october-2024.pdf" target="_blank" class="w3-button w3-teal w3-padding-large">Téléchargez le PDF</a></p>
+	
+</div>
+
+<div class="w3-half w3-padding-small">
+<img src="../images/p-garden-kidney-oct-2024-600x428.jpg" alt="Kidney-shaped plot" style="width:100%"> 
+<p>Catherine avec la parcelle en forme de rein destinée pour le jardin de pollinisateurs.</p>
+<img src="../images/p-garden-map-oct-2024-600x474.jpg" alt="Google Map" style="width:100%">
+<p>L'emplacement de la parcelle au parc Lawrence Earl qui longe le chemin Bord-du-lac</p>
+</div>
+<div class="w3-panel w3-border-bottom"> </div>
+<h3>septembre 2024</h3>
+<div class="w3-half w3-padding-small">
+  
+  <p>Le sous-comité SHED est heureux d'annoncer que notre demande de soutien de la ville pour planter un jardin de démonstration de pollinisateurs a été approuvée. La Cité de Dorval attribuera une grande zone publique dans le parc Lawrence Earl et fournira un soutien par l'intermédiaire du service d'horticulture.  Le jardin servira de vitrine éducative pour aider les citoyens de Dorval à en apprendre davantage sur les jardins de pollinisateurs et commémorera également le 70e anniversaire du club. Le jardin présentera une palette de couleurs violette, jaune et blanche et sera en grande partie composé de plantes locales de notre région, 
+dans la vallée du fleuve Saint-Laurent. Nous solliciterons des dons de plantes auprès de nos membres - alors restez à l'écoute!</p>
+  
+  <p><a href="../documents/dhes-pollinator-garden-september-2024.pdf" target="_blank" class="w3-button w3-teal w3-padding-large">Téléchargez le PDF</a></p>
+
+</div>
+
+<div class="w3-half w3-padding-small">
+<img src="../images/p-garden-mayor-sept-2024-600x450.jpg" alt="Dorval Mayor" style="width:100%">
+<p>Dorval Mayor, Marc Doret, with Catherine and Laura </p>
+</div>
+ </div>
+</div>
+
+<!-- Events Row keep for links to work -->
+<div class="w3-row-padding w3-center w3-padding-64" id="events">
+   
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onClick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous joindre</span></div>
+      <h3>Adresse</h3>
+	  	<p> <strong>Société d'horticulture et d'écologie de Dorval<br>
+        Dorval Horticultural &amp; Ecological Society</strong><br>
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Centre Communautaire Sarto-Desnoyers<br>
+        1335 chemin Bord-du-Lac<br>
+        Dorval, Québec<br>
+		H9S 2E5</p>
+	<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +1 514 633-4000</p>
+	<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> dorvalhort@gmail.com</p>
+	<br><br>
+    </div>
+	
+    <div class="w3-col m7">
+	<img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
+	</div>
+  </div>
+</div>
+
+
+<!-- Image of location/map -->
+<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Nous suivre</h4>
+  <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)" class="w3-button w3-large w3-teal" title="Facebook">
+  <i class="fa fa-facebook"></i></a>
+  <p>© 2025, Société d’horticulture et d’écologie de Dorval - Dorval Horticultural and Ecological Society</p>
+  <p>Propulsé par <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Haut de page</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

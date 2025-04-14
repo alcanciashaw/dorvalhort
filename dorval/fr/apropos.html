@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Société d’horticulture et d’écologie de Dorval | À propos de notre club</title>
+<meta charset="UTF-8">
+<meta name="description" content="La Société d’horticulture et d’écologie de Dorval (SHED)  a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="shortcut icon" href="../images/rose.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* unvisited link */
+p a:link {
+  color: teal;
+}
+
+/* visited link */
+p a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+p  a:hover {
+  color: DarkSlateGrey;
+}
+
+/* selected link */
+p  a:active {
+  color: DarkSlateBlue;
+}
+</style>
+</head>
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fermez
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+  <a href="executif.html" class="w3-bar-item w3-button">Exécutif</a>
+    <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+  <a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	  <a href="../en/about.html" class="w3-bar-item w3-button">English</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>SHED</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="À propos de la SHED">À propos<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos de notre club</a>
+      <a href="apropos.html#history" class="w3-bar-item w3-button">Histoire</a>
+	  <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	  <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+    </div>
+  </div>
+  <a href="evenements.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Événements</a>
+  <a href="nouvelles.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nous joindre</a>
+	<a href="../en/about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">English</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+    <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	<a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+	<a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+    <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	<a href="../en/about.html" class="w3-bar-item w3-button">English</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../images/banner-2500x1665-7.jpg" alt="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL" style="width:100%;min-height:350px;max-height:800px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL">SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onClick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Société d’horticulture et d’écologie de Dorval</h4>
+     
+    </header><div class="w3-container">
+	 <h5>Notre objectif</h5>
+      <p>La Société a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.</p>
+      <p>Lisez notre <a href="../documents/constitution-dhes-shed-fr.pdf" target="_blank">constitution</a> ou téléchargez notre <a href="../documents/dhes-shed-brochure.pdf" target="_blank">brochure</a> pour en savoir plus sur la SHED.</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>&copy; SHED</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="w3-container w3-padding-24 w3-center" id="main">
+<h2 class="w3-text-teal">À PROPOS DE NOTRE CLUB</h2>
+  <h3 class="w3-cursive">70 ans et toujours en croissance</h3>
+  
+  <div class="w3-row"><br>
+  
+<div class="w3-col">
+  <p align="left">La Société d’horticulture et d’écologie de Dorval vous souhaite la bienvenue. Vouée à l’embellissement des propriétés privées de notre ville depuis au-delà de 70 ans! Nous accueillons chaleureusement toutes les personnes qui apprécient les plantes, que ces personnes possèdent ou non des connaissances en horticulture. En vous joignant à notre groupe, vous ferez la connaissance de gens avec qui partager votre passion pour le jardinage, qu’il s’agisse de plantes d’intérieures ou de végétaux qui poussent en pleine terre, en contenants ou à l’extérieur. Aucun talent particulier n’est requis!</p>
+  <p align="left"><a href="../documents/dhes-shed-brochure.pdf" target="_blank" class="w3-button w3-teal w3-padding-large">Téléchargez notre brochure</a></p>
+   <div class="w3-panel w3-border-bottom"> </div>
+    <h3 align="left">Notre mission</h3>
+    <ul class="w3-ul">
+     <li>
+       <div align="left">
+         <p><span class="w3-badge w3-large w3-green w3-padding">1</span>&nbsp;Développer les connaissances de nos membres pour contribuer à 
+      l’embellissement de notre environnement</p>
+       </div>
+     </li>
+     <li align="left">
+       <div align="left">
+         <p><span class="w3-badge w3-large w3-green w3-padding">2</span>&nbsp;Promouvoir les pratiques de jardinage qui sont  propices à la protection de l’environnement</p>
+       </div>
+     </li>
+     <li align="left">
+       <div align="left">
+         <p><span class="w3-badge w3-large w3-green w3-padding">3</span>&nbsp;Disséminer l’information et la  documentation pertinentes à cet effet</p>
+       </div>
+     </li>
+   </ul>
+  <div class="w3-panel w3-border-bottom"> </div> 
+   <h3 align="left">Nos réunions mensuelles</h3>
+  <p align="left">De septembre à mai, exception faite du mois de décembre, nous nous rencontrons le quatrième lundi du mois, et ce à 19&nbsp;h&nbsp;30, au Centre culturel Sarto-Desnoyers, situé au 1335 chemin Bord-du-Lac, Dorval, Québec. <a href="https://www.google.ca/maps?f=q&source=embed&hl=en&q=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&aq&sll=45.44005,-73.75386&sspn=0.007257,0.02105&ie=UTF8&geocode=FZ9btQIdopia-w&split=0&hq&hnear=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&ll=45.44005,-73.75386&spn=0.014513,0.0421&t=m&z=14" target="_blank">Voir la carte</a></p>
+ 
+  <ul class="w3-ul">
+    <li>
+      <div align="left">
+        <p><span class="w3-badge w3-large w3-green w3-padding">1</span>&nbsp;Une réunion consiste d'une conférence et de rafraichissements. </p>
+      </div>
+    </li>
+    <li>
+      <div align="left">
+        <p><span class="w3-badge w3-large w3-green w3-padding">2</span>&nbsp;Les visiteurs non-membres sont admis moyennant une contribution de 5&nbsp;$ par réunion.</p>
+      </div>
+    </li>
+    <li>
+      <div align="left">
+        <p><span class="w3-badge w3-large w3-green w3-padding">3</span>&nbsp;Consultez notre calendrier pour les informations relatives aux   <a href="evenements.html">événements à venir</a>. </p>
+      </div>
+    </li>
+  </ul>
+  
+<br>
+   <div class="w3-panel w3-pale-green">
+     <h3 align="left">Vos commentaires</h3>
+     <p align="left"><a href="mailto:dorvalhort@gmail.com">Veuillez nous acheminer</a> vos suggestions de conférenciers et/ou de thèmes de conférences. C’est avec grand plaisir que nous recevrons vos commentaires et suggestions dans le but de rendre ce site plus utile ou plus agréable à consulter.</p>
+   <br>
+  </div>
+  
+  
+</div>
+
+ </div>
+</div>
+
+<!-- Second Container -->
+<div class="w3-container w3-padding-16 w3-center" id="history">
+<h2 class="w3-text-teal">HISTOIRE</h2>
+<h3 class="w3-cursive">La petite histoire de la Société d’horticulture et d’écologie de Dorval</h3>
+<div class="w3-row"><br>
+<div class="w3-half w3-padding-small">
+
+  <p align="left">Dorval est renommé pour ses magnifiques jardins publiques et ses aménagements paysagers novateurs. Qui n’a pas été impressionné par les plantations à la Bibliothèque, le rond-point, le village et Pine Beach?</p>
+    
+   <p align="left">Mais ça n’a pas toujours été ainsi. Lors des années cinquante et soixante, les banlieues poussaient comme des champignons. Les terrains des usines et des stations-service qui surgissaient à la périphérie de Dorval étaient en piteux état. Les jeunes couples qui déménageaient dans leurs nouvelles maisons de banlieues constataient que l’entretien et l’aménagement d’un jardin nécessitaient plus qu’une passion illimitée, l’amour du plein air, et quelques sachets de graines. La <strong>Société d'horticulture de Dorval</strong> est venu à leurs secours et a joué un rôle significatif dans l’établissement de l’importance de la beauté environnementale de la Cité. </p>
+    
+    <h4 align="left">1953</h4>
+    <p align="left">Même si la Société fonctionnait déjà depuis plusieurs années, en 1953 elle a été dûment inscrite au registre du Ministre de l'Agriculture, des Pêcheries et de l'Alimentation. Son focus était l’embellissement de Dorval par les jardins de ses membres.</p>
+    <h4 align="left">1965</h4>
+    <p align="left">En 1965, sous la direction dynamique d’Harold Weldon, la Société dressait une nouvelle charte et agrandissait son focus</p>
+<div class="w3-panel w3-leftbar w3-sand w3-xlarge w3-serif">
+      <p><em>&laquo;&nbsp;d’améliorer et développer la connaissance horticulturale de ses membres pour ainsi améliorer l’apparence et le développement de la Cité de Dorval&nbsp;&raquo;. </em></p>
+    </div>
+    <p align="left">Les critères d’adhésion ont été changés pour inclure des ‘<em>organisations industrielles, commerciales, publiques et/ou privées</em>’. La Société tenait des réunions mensuelles dédiées à l’instruction sur l’émondage, le paysagement, l’entretien du sol, la cultivation d’un jardin à partir de graines, le jardinage en serres, et d’autres. Elle tenait une vente de plantes annuelles et diverses compétitions incluant une spécifiquement pour enfants. Elle montait des expositions, des séminaires, des diaporamas et la <em>Lakeshore Rose and Bloom Competition</em>. Aussi, elle s’impliquait dans la communauté. Par exemple elle rendait visite au <em>Griffith Home</em> et organisait des collectes de fonds pour <em>The Quebec Association for the Mentally Retarded</em>.</p>
+	 
+</div>
+<div class="w3-half w3-padding-small">
+  <p align="left">La Société comprenait deux comités importants. Le <strong>Comité consultatif</strong> consistait de personnes ayant une expertise en jardinage d’arbres et arbustes, le paysagement, les annuelles, les rocailles, les roses et les boîtes à fleurs et les membres étaient disponible pour partager leur expertise et offrir de l’aide. Le<strong> Comité de liaison</strong> a été établi pour travailler avec la Cité de Dorval sur les affaires horticulturales. </p>
+  <h4 align="left">1967</h4>
+  <p align="left">En 1967, le tricentenaire de Dorval, un sous-comité a pris des photographes des endroits publics disgracieux et les a présentés avec des suggestions pour l’amélioration au maire, M. Sarto Desnoyers. Il a proposé qu’un comité paritaire soit formé pour superviser l’implémentation de ses idées. La Société avait raison d’être fier d’avoir atteint son but ‘<em>de rendre service</em>’.  </p>
+  <h4 align="left">2024</h4>
+  <p align="left">En 2024 la <strong>Société d`horticulture et d’écologie de Dorval</strong> fête son 70e année d’opération continuelle. Son focus a évolué avec le temps et inclut maintenant des pratiques écologiques durables comme un de ses buts principaux. </p>
+  <p align="left">La vente de plantes vivaces se tient le samedi de la fin de semaine de la journée nationale des patriotes en collaboration avec la Cité qui fait une distribution gratuite de compost et donne de l’information sur la conservation de l’eau et autres programmes écologiques. Les réunions mensuelles continuent et les conférenciers informent et inspirent les jardiniers de tous les niveaux. La Société offre toujours un leadership horticulturale et consiste de jardiniers enthousiastes. </p>
+  <div class="w3-panel w3-leftbar w3-sand w3-xlarge w3-serif">
+      <p><em>&laquo;&nbsp;Il ne fait pas juste bon de vivre à Dorval, c’est de toute beauté.&nbsp;&raquo;</em></p>
+    </div>
+
+</div>
+</div>
+</div>
+
+<!-- Events Row keep for links to work -->
+<div class="w3-row-padding w3-center w3-padding-64" id="events">
+   
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onClick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous joindre</span></div>
+      <h3>Adresse</h3>
+	  	<p> <strong>Société d'horticulture et d'écologie de Dorval<br>
+        Dorval Horticultural &amp; Ecological Society</strong><br>
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Centre Communautaire Sarto-Desnoyers<br>
+        1335 chemin Bord-du-Lac<br>
+        Dorval, Québec<br>
+		H9S 2E5</p>
+	<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +1 514 633-4000</p>
+	<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> dorvalhort@gmail.com</p>
+	<br><br>
+    </div>
+	
+    <div class="w3-col m7">
+	<img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
+	</div>
+  </div>
+</div>
+
+
+<!-- Image of location/map -->
+<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Nous suivre</h4>
+  <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)" class="w3-button w3-large w3-teal" title="Facebook">
+  <i class="fa fa-facebook"></i></a>
+  <p>© 2025, Société d’horticulture et d’écologie de Dorval - Dorval Horticultural and Ecological Society</p>
+  <p>Propulsé par <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Haut de page</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

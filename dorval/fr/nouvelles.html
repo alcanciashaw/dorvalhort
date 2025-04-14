@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Société d’horticulture et d’écologie de Dorval | Nouvelles</title>
+<meta charset="UTF-8">
+<meta name="description" content="La Société d’horticulture et d’écologie de Dorval (SHED)  a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="shortcut icon" href="../images/rose.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* unvisited link */
+p a:link {
+  color: teal;
+}
+
+/* visited link */
+p a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+p  a:hover {
+  color: DarkSlateGrey;
+}
+
+/* selected link */
+p  a:active {
+  color: DarkSlateBlue;
+}
+</style>
+</head>
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fermez
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+  <a href="executif.html" class="w3-bar-item w3-button">Exécutif</a>
+    <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+  <a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	  <a href="../en/news.html" class="w3-bar-item w3-button">English</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>SHED</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="À propos de la SHED">À propos<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos de notre club</a>
+      <a href="apropos.html#history" class="w3-bar-item w3-button">Histoire</a>
+	  <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	  <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+    </div>
+  </div>
+  <a href="evenements.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Événements</a>
+  <a href="nouvelles.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nous joindre</a>
+	<a href="../en/news.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">English</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+    <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	<a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+	<a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+    <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	<a href="../en/news.html" class="w3-bar-item w3-button">English</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../images/banner-2500x1665-17.jpg" alt="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL" style="width:100%;min-height:350px;max-height:800px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL">SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onClick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Société d’horticulture et d’écologie de Dorval</h4>
+     
+    </header><div class="w3-container">
+	 <h5>Notre objectif</h5>
+      <p>La Société a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.</p>
+      <p>Lisez notre <a href="../documents/constitution-dhes-shed-fr.pdf" target="_blank">constitution</a> ou téléchargez notre <a href="../documents/dhes-shed-brochure.pdf" target="_blank">brochure</a> pour en savoir plus sur la SHED.</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>&copy; SHED</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="w3-container w3-padding-24 w3-center" id="main">
+<h2 class="w3-text-teal">NOUVELLES</h2>
+  <h3 class="w3-cursive">70 ans et toujours en croissance </h3>
+  <div class="w3-row"><br>
+<div class="w3-col">
+
+  <h3 align="left">Bulletins</h3>
+  <p align="left">Téléchargez nos bulletins pour en apprendre davantage sur notre club. <a href="adhesion.html">Tous les membres</a> reçoivent le bulletin par courriel 6-7 fois par an.</p>
+   <p align="left"><a href="#information" class="w3-button w3-teal w3-padding-large">Informations utiles pour les jardiniers</a></p>
+   
+   </div>
+ </div>
+</div>
+
+
+<!-- Newsletters Row -->
+<div class="w3-row-padding w3-center w3-padding-24" id="archive">
+    <h2 class="w3-text-teal">ARCHIVE</h2>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">2025-2024</p>
+        </li>
+		<li class="w3-padding-16">
+		  <p><a href="../documents/newsletters/2025-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+		</li>
+        <li class="w3-padding-16">
+          <p><strong>2024</strong></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+		<li class="w3-padding-16">
+		  <p><a href="../documents/newsletters/2024-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+		</li>
+      </ul>
+  </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">2023-2022</p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+		 <li class="w3-padding-16">
+		   <p><a href="../documents/newsletters/2023-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+		 </li>
+        <li class="w3-padding-16">
+          <p><strong>2022</strong></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2022-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2022-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2022-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2022-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2022-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2022-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+        </li>
+      </ul>
+  </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">2021-2020</p>
+        </li>
+       <li class="w3-padding-16">
+         <p><a href="../documents/newsletters/2021-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+       </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2021-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2021-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2021-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+		<li class="w3-padding-16">
+		  <p><a href="../documents/newsletters/2021-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+		</li>
+        <li class="w3-padding-16">
+          <p><strong>2020</strong></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2020-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2020-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2020-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2020-bulletin-shed-dhes-newsletter-july.pdf" target="_blank">JUILLET</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2020-bulletin-shed-dhes-newsletter-dec.pdf" target="_blank">DÉCEMBRE</a></p>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-padding-24" id="archive2">
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">2019-2018</p>
+        </li>
+		<li class="w3-padding-16">
+		  <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+		</li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-may.pdf" target="_blank">MAI</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2019-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><strong>2018</strong></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+		<li class="w3-padding-16">
+		  <p><a href="../documents/newsletters/2018-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+		</li>
+      </ul>
+  </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">2017-2016</p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-may.pdf" target="_blank">MAI</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2017-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+	    <li class="w3-padding-16">
+	      <p><strong>2016</strong></p>
+	    </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2016-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2016-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2016-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2016-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2016-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2016-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+        </li>
+      </ul>
+  </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">2015-2013</p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+		<li class="w3-padding-16">
+		  <p><a href="../documents/newsletters/2015-bulletin-shed-dhes-newsletter-nov.pdf" target="_blank">NOVEMBRE</a></p>
+		</li>
+        <li class="w3-padding-16">
+          <p><strong>2014</strong></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-jan.pdf" target="_blank">JANVIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-feb.pdf" target="_blank">FÉVRIER</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-march.pdf" target="_blank">MARS</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-april.pdf" target="_blank">AVRIL</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-may.pdf" target="_blank">MAI</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2014-bulletin-shed-dhes-newsletter-dec.pdf" target="_blank">DÉCEMBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><strong>2013</strong></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2013-bulletin-shed-dhes-newsletter-oct.pdf" target="_blank">OCTOBRE</a></p>
+        </li>
+        <li class="w3-padding-16">
+          <p><a href="../documents/newsletters/2013-bulletin-shed-dhes-newsletter-sept.pdf" target="_blank">SEPTEMBRE</a></p>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<!-- Information Container -->
+<div class="w3-container w3-padding-24 w3-left" id="information">
+<h2 align="center" class="w3-text-teal">INFORMATIONS UTILES POUR LES JARDINIERS</h2>
+  <h3 align="center" class="w3-cursive">L'apprentissage tout au long de la vie </h3>
+  <div class="w3-row"><br>
+  <div class="w3-col">
+  
+  <h3>Présentations</h3>
+ 
+   <table class="w3-table w3-striped w3-border">
+     <thead>
+	 <tr class="w3-green">
+	 <th>Conférencier-ière</th>
+	 <th>Thème</th>
+	 <th>Date</th>
+	 </tr>
+	 </thead>
+	 <tr>
+       <td><p>Ingrid Birker<br>
+         Musée Redpath</p></td>
+       <td><p><a href="../documents/birker-fossil-plants-eastern-canada-march-24-2024.pdf" target="_blank">Fossil plants from eastern Canada</a> </p></td>
+       <td><p>24 mars 2024</p></td>
+     </tr>
+     <tr>
+       <td><p>Sean James<br>
+         Collège Mohawk</p></td>
+       <td><p><a href="../documents/james-pruning-april-19-2021.pdf" target="_blank">Proud of my pruning</a> </p></td>
+       <td><p>19 avril 2021</p></td>
+     </tr>
+     <tr>
+       <td><p>Diane Mackay <br>
+         Les Jardins du Grand-Portage</p></td>
+       <td><p><a href="../documents/mackay-bilingual-notes-medicinal-plants-oct-22-2018.pdf" target="_blank">Plantes médicinales et ornementales</a> </p></td>
+       <td><p>22 octobre 2018 </p></td>
+     </tr>
+     <tr>
+       <td><p>Tony Spencer</p></td>
+       <td><p><a href="../documents/spencer-dreaming-new-perennial-garden-2017.pdf" target="_blank">Dreaming the New Perennial Garden</a></p></td>
+       <td><p>2017</p></td>
+     </tr>
+     <tr>
+       <td><p>Claire Bélisle</p></td>
+       <td><p><a href="../documents/belisle-shade-gardening-talk-feb-27.pdf" target="_blank">Merveilleuses plantes d’ombre, autres que les hostas et fougères</a></p></td>
+       <td><p>27 février </p></td>
+     </tr>
+   </table>
+ </div>
+ 
+  <div class="w3-panel w3-border-bottom"> </div>
+
+ 
+<div class="w3-half w3-padding-small">
+  <h3> Plantes indigènes </h3>
+  <p>(sites en anglais) </p>
+  <ul>
+    <li>
+      <p><a href="../documents/native-plant-infosheet-jan-24-2023.pdf" target="_blank">Native Plants Infosheet</a></p>
+    </li>
+    <li>
+      <p><a href="https://nanps.org/96358-2/" target="_blank">Starting Native Seeds Indoors</a> par Ryan Godfrey (North American Native Plants Society) </p>
+    </li>
+    <li>
+      <p><a href="https://nanps.org/events/propagating-native-plants-getting-your-seeds-to-grow/" target="_blank">Propagating Native Plants: Getting your Seeds to Grow</a> par Stefan Weber (NANPS) </p>
+    </li>
+    <li>
+      <p><a href="https://nanps.org/events/flowers-and-food-growing-edible-native-plants/" target="_blank">Flowers and Food: Growing Edible Native Plants</a> par Lorraine Johnson (NANPS) </p>
+    </li>
+    <li>
+      <p><a href="https://nanps.org/commercial-growers/" target="_blank">List of commercial growers</a> (NANPS)</p>
+    </li>
+    <li>
+      <p><a href="https://pollinatorpartnership.ca/en/project-swallowtail/seed-sitters" target="_blank">Project Swallowtail Seed Sitters Club</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.inournature.ca/native-groundcovers" target="_blank">21 Native Groundcovers for Ontario Gardens</a></p>
+    </li>
+    <li>
+      <p><a href="../documents/nanps-how-to-create-a-pollinator-garden-07-31-2023.pdf" target="_blank">How-to-Create-a-Pollinator-Garden</a> (NANPS) </p>
+    </li>
+    <li>
+      <p><a href="../documents/nanps-pollinator-tip-sheet-jan-31-2023.pdf" target="_blank">Pollinator-Tip-Sheet</a> (NANPS) </p>
+    </li>
+  </ul>
+  
+  <div class="w3-panel w3-border-bottom"> </div>
+  
+  <h3>Rabais</h3>
+    <p><strong>Pépinière des Sources</strong>  (<a href="https://sourcesinc.ca/" target="_blank">coin des Sources et St-Louis</a>) offre aux membres du SHED un rabais de 10 à 15% sur les prix de vente au détail des arbres, des arbustes et des vivaces, en plus un rabais de 10 $ sur la livraison d'articles en vrac tels que du sol ou du gravier.  Vous devez présenter votre carte de membre.</p>
+  
+    <div class="w3-panel w3-border-bottom"> </div>
+  
+   <h3>Trucs et astuces</h3>
+   <p>(en anglais) </p>
+   <ul>
+     <li>
+       <p><a href="../documents/home-recipes-07-05-2022.pdf" target="_blank">Home Recipes</a> </p>
+     </li>
+     <li>
+       <p><a href="../documents/herbology-common-medicinal-plants-07-05-2022.pdf" target="_blank">Herbology and common medicinal plants    </a></p>
+     </li>
+     <li>
+       <p><a href="../documents/compost.pdf" target="_blank">Composting leaves</a></p>
+     </li>
+     <li>
+       <p><a href="../documents/ergo-tools.pdf" target="_blank">Ergonomic Garden Tools</a> </p>
+     </li>
+     <li>
+       <p><a href="../documents/ticks.pdf" target="_blank">Ticks</a></p>
+     </li>
+   </ul>
+   
+    <div class="w3-panel w3-border-bottom"> </div>
+	
+   <h3>Articles</h3>
+  <p><a href="https://www.finegardening.com/project-guides/gardening-basics/learn-to-water-well" target="_blank">Learn to Water Well: Develop an effective regimen by testing your soil and getting to know your plants</a>, Janet Macunovich, <em>Fine Gardening</em> - Issue 105, novembre 2005</p>
+  <ul>
+    <li> Évitez d’utiliser le système d’irrigation ou un arrosoir en mi-journée par temps chaud, alors que jusqu’à 90% de l’eau risque de s’évaporer! </li>
+    <li>Assurez-vous de n’arroser que les plantes, et non la rue, les trottoirs ou votre entrée de garage. </li>
+    <li>Les boyaux suintants peuvent éviter le gaspillage en dirigeant l’eau précisément là où il y a un besoin. </li>
+    <li>Dans la mesure du possible, choisissez des végétaux résistants à la sécheresse </li>
+  </ul>
+  <p><a href="https://plus.lapresse.ca/screens/7d7f8c33-8e9a-49d3-b782-78645d8dfc95|_0" target="_blank">La technologie qui rend la main verte</a>, <em>La Presse</em>, Karim Benessaieh, October 26, 2014 </p>
+
+ <div class="w3-panel w3-border-bottom"> </div>
+ 
+<h3>Jardiner sans se fatiguer</h3>
+  <ul>
+    <li>
+      <p><a href="../documents/tableau-de-vivaces.pdf" target="_blank">Tableau de vivaces</a> </p>
+    </li>
+    <li>
+      <p><a href="../documents/references-en-anglais.pdf" target="_blank">Références</a> (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="../documents/feuillet-horticulture-sans-courbature.pdf" target="_blank">L'horticulture sans courbature</a>, Christian Normandin </p>
+    </li>
+    <li>
+      <p><a href="https://dorvalhort.com/Documents/Gardening Doesn't Have to Hurt Your Back.mp4" target="_blank">Gardening Doesn't Have to Hurt Your Back</a> (vidéo) </p>
+    </li>
+    <li>
+      <p><a href="https://dorvalhort.com/Documents/Stop Destroying Your Back When Gardening. 12 Golden Tips.mp4" target="_blank">Stop Destroying Your Back When Gardening. 12 Golden Tips</a> (vidéo) </p>
+    </li>
+    <li>
+      <p><a href="https://laidbackgardener.blog/2022/09/18/as-you-age-become-an-adaptive-gardener/" target="_blank">As You Age, Become an Adaptive Gardener</a>, Laidback Gardener</p>
+    </li>
+    </ul>
+  <p>&nbsp;</p>
+</div>
+
+<div class="w3-half w3-padding-small">
+   <h3>Sites Web </h3>
+   <ul>
+    <li>
+      <p><a href="http://www.fsheq.com/" target="_blank">FSHEQ</a> (Fédération des sociétés d'horticulture et d'écologie du Québec)    </p>
+    </li>
+    <li>
+      <p><a href="https://espacepourlavie.ca/carnet-horticole-et-botanique" target="_blank">Montreal Botanical Garden - Carnet horticole et botanique </a></p>
+    </li>
+    <li>
+      <p><a href="https://www.gardening-enjoyed.com/" target="_blank">Gardening Enjoyed</a>, Ken Brown (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://www.thenewperennialist.com/" target="_blank">The New Perennialist</a>, Tony Spencer (en anglais) </p>
+    </li>
+    <li> 
+      <p><a href="http://grandpotager.ca/en/" target="_blank">Grand Potager</a>, Verdun </p>
+    </li>
+    <li>
+      <p><a href="https://ngb.org/" target="_blank">National Garden Bureau</a>  (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://www.avasflowers.net/plant-propagation-guide-for-beginners" target="_blank">Plant Propagation Guide for Beginners</a>  (en anglais) </p>
+    </li>
+  </ul>
+  
+  <div class="w3-panel w3-border-bottom"> </div>
+  
+
+  
+  <h3>Catalogues de semences</h3>
+  <ul>
+    <li>
+      <p><a href="https://fermetournesol.qc.ca/" target="_blank">Ferme Tourne-Sol</a></p>
+    </li>
+    <li>
+      <p><a href="https://semencesancestrales.com/" target="_blank">Semences ancestrales Québec </a></p>
+    </li>
+    <li>
+      <p><a href="https://mckenzieseeds.com/" target="_blank">McKenzie Seeds</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.ecologieottawa.ca/une_idee_qui_s_enracine" target="_blank">Bibliothèque de semences de fleurs sauvages d'Ottawa</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.urbanseedling.com/" target="_blank">Semis urbains </a></p>
+    </li>
+  </ul>
+ 
+ 
+ <div class="w3-panel w3-border-bottom"> </div>
+ 
+  <h3>Sociétés d'horticulture de la région de Montréal</h3>
+  <ul>
+    <li>
+      <p><a href="https://beaconsfieldgardenclub.ca/" target="_blank">Club de jardinage Beaconsfield</a></p>
+    </li>
+    <li>
+      <p><a href="http://www.pteclairehort.org/" target="_blank">Club de jardinage Pointe-Claire</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.facebook.com/groups/831342070260413" target="_blank">Westmount Horticultural Society</a> </p>
+    </li>
+  </ul>
+  
+  
+  <div class="w3-panel w3-border-bottom"> </div>
+  
+  <h3>Liens environnementaux</h3>
+  <ul>
+    <li>
+      <p><a href="https://renaturemontreal.ca/fr/" target="_blank">Renature Montréal</a></p>
+    </li>
+    <li>
+      <p><a href="http://www.computation.to/index-fr.html" target="_blank">Recyclage d'équipements éléctroniques</a></p>
+    </li>
+    <li>
+      <p><a href="http://www.compost.org/" target="_blank">The Composting Council of Canada</a> (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://www.apartmentguide.com/blog/basic-guide-to-composting-at-your-apartment/" target="_blank">Guide To Apartment & Condo Composting</a> (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://earth911.com/" target="_blank">Earth 911</a> (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="http://www.greenpeace.org/canada/fr/" target="_blank">Greenpeace Canada</a></p>
+    </li>
+    <li>
+      <p><a href="https://goingcarbonneutral.ca/" target="_blank">Going Carbon Neutral - First town in Canada</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.compostguide.com/" target="_blank">Compost Guide</a></p>
+    </li>
+    <li>
+      <p><a href="https://www.homeadvisor.com/r/home-science-backyard-conservation/" target="_blank">Home Science: Backyard Conservation</a>, November 1, 2019 (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://www.rentdeals.com/blog/the-importance-of-backyard-conservation-at-your-home/" target="_blank">The Importance of Backyard Conservation at Your Home    </a>(en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://porch.com/advice/creating-composting-system" target="_blank">Creating the Best At-Home Composting System</a></p>
+    </li>
+    <li>
+      <p><a href="../documents/guide-sustainable-eco-friendly-travel.pdf" target="_blank">Guide to Sustainable and Eco-Friendly Travel</a> (en anglais) </p>
+    </li>
+    <li>
+      <p><a href="https://couponfollow.com/research/home-green-guide" target="_blank">The Money-Saving Guide to Going Green at Home</a> (en anglais) </p>
+    </li>
+    </ul>
+  <p>&nbsp;</p>
+  
+  <div class="w3-panel w3-pale-green"><h3>Vos commentaires</h3>
+  <p>Pour nous communiquer vos suggestions pour cette rubrique, <a href="mailto:dorvalhort@gmail.com">contactez-nous</a>.</p>
+  </div>
+ </div>
+</div>
+
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onClick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous joindre</span></div>
+      <h3>Adresse</h3>
+	  	<p> <strong>Société d'horticulture et d'écologie de Dorval<br>
+        Dorval Horticultural &amp; Ecological Society</strong><br>
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Centre Communautaire Sarto-Desnoyers<br>
+        1335 chemin Bord-du-Lac<br>
+        Dorval, Québec<br>
+		H9S 2E5</p>
+	<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +1 514 633-4000</p>
+	<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> dorvalhort@gmail.com</p>
+	<br><br>
+    </div>
+	
+    <div class="w3-col m7">
+	<img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
+	</div>
+  </div>
+</div>
+
+
+<!-- Image of location/map -->
+<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Nous suivre</h4>
+  <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)" class="w3-button w3-large w3-teal" title="Facebook">
+  <i class="fa fa-facebook"></i></a>
+  <p>© 2025, Société d’horticulture et d’écologie de Dorval - Dorval Horticultural and Ecological Society</p>
+  <p>Propulsé par <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Haut de page</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

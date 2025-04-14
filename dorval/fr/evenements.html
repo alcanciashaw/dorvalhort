@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Société d’horticulture et d’écologie de Dorval | Événements</title>
+<meta charset="UTF-8">
+<meta name="description" content="La Société d’horticulture et d’écologie de Dorval (SHED)  a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="shortcut icon" href="../images/rose.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* unvisited link */
+p a:link {
+  color: teal;
+}
+
+/* visited link */
+p a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+p  a:hover {
+  color: DarkSlateGrey;
+}
+
+/* selected link */
+p  a:active {
+  color: DarkSlateBlue;
+}
+</style>
+</head>
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fermez
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+  <a href="executif.html" class="w3-bar-item w3-button">Exécutif</a>
+    <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+  <a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	  <a href="../en/events.html" class="w3-bar-item w3-button">English</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>SHED</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="À propos de la SHED">À propos<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos de notre club</a>
+      <a href="apropos.html#history" class="w3-bar-item w3-button">Histoire</a>
+	  <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	  <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+    </div>
+  </div>
+  <a href="evenements.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Événements</a>
+  <a href="nouvelles.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nous joindre</a>
+	<a href="../en/events.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">English</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+    <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	<a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+	<a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+    <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	<a href="../en/events.html" class="w3-bar-item w3-button">English</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../images/banner-2500x1665-16.jpg" alt="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL" style="width:100%;min-height:350px;max-height:800px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL">SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onClick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Société d’horticulture et d’écologie de Dorval</h4>
+     
+    </header><div class="w3-container">
+	 <h5>Notre objectif</h5>
+      <p>La Société a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.</p>
+      <p>Lisez notre <a href="../documents/constitution-dhes-shed-fr.pdf" target="_blank">constitution</a> ou téléchargez notre <a href="../documents/dhes-shed-brochure.pdf" target="_blank">brochure</a> pour en savoir plus sur la SHED.</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>&copy; SHED</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="w3-container w3-padding-24 w3-left" id="main">
+<h2 align="center" class="w3-text-teal">ÉVÉNEMENTS</h2>
+  <h3 align="center" class="w3-cursive">Rejoignez notre communauté</h3>
+  <div class="w3-row"><br>
+<div class="w3-col">
+ 
+<h3>Nos réunions mensuelles</h3>
+  <p>De septembre à mai, exception faite du mois de décembre, nous nous rencontrons le quatrième lundi du mois, et ce à 19&nbsp;h&nbsp;30, au Centre culturel Sarto-Desnoyers, situé au 1335 chemin Bord-du-Lac, Dorval, Québec. <a href="https://www.google.ca/maps?f=q&source=embed&hl=en&q=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&aq&sll=45.44005,-73.75386&sspn=0.007257,0.02105&ie=UTF8&geocode=FZ9btQIdopia-w&split=0&hq&hnear=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&ll=45.44005,-73.75386&spn=0.014513,0.0421&t=m&z=14" target="_blank">Voir la carte</a></p>
+  <ul>
+    <li>Une réunion consiste d'une conférence et de rafraichissements. </li>
+    <li>Les visiteurs non-membres sont admis moyennant une contribution de 5&nbsp;$ par réunion.</li>
+    <li>Apportez votre tasse à café aux réunions et n’oubliez pas votre étiquette avec votre nom.</li>
+	<li>Apportez une contribution pour la table des cadeaux. Tout ce qui touche au jardinage est apprécié. Soyez prêt à la ramener à la maison si nécessaire.</li>
+  </ul>
+</div>
+ </div>
+</div>
+
+<!-- Events Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="events">
+    <h2 class="w3-text-teal">ÉVÉNEMENTS À VENIR</h2>
+
+    
+
+    <div class="w3-third w3-margin-bottom">
+	<img src="../images/renature-montreal-600x400.jpg" alt="Renature Montreal" style="width:100%">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">24 FÉV 2025 à 19&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>RENATURATION DE MONTRÉAL</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Oz et Joan Obukuru</strong>, <a href="http://www.renaturemontreal.ca/en/" target="_blank">Renature Montréal</a>.  Ils parleront de leurs projets ambitieux de plantation de plantes indigènes, du contrôle des espèces envahissantes, de l’importance de la biodiversité et encourager la population d’oiseaux.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation en anglais avec questions bilingues.</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+	<img src="../images/jardindepluie-600x400.jpg" alt="Jardins de pluie" style="width:100%">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">24 MARS 2025 à 19&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>JARDINS DE PLUIE</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>OBV Yamaska</strong>. <a href="https://obv-yamaska.qc.ca/" target="_blank">OBV Yamaska</a> accompagne les citoyens dans la réalisation de leur projet de jardin de pluie.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation en français.</li>
+      </ul>
+  </div>
+  
+  <div class="w3-third w3-margin-bottom">
+    <img src="../images/event-tbd-600x400.jpg" alt="À déterminer" style="width:100%">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">28 AVRIL 2025 à 19&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>À DÉTERMINER </b>
+          <p>.</p>
+        </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Events Archive Row 1 -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pastevents1">
+    <h2 class="w3-text-teal">ÉVÉNEMENTS PASSÉS</h2>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">27 JAN 2025 à 19&nbsp;h&nbsp;30</p>
+        </li>
+		<li class="w3-padding-16"><b>ASSEMBLÉE GÉNÉRALE </b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>La première demi-heure sera consacrée à l’assemblée générale. Il est important qu’il y ait quorum pour nous permettre de procéder à l’approbation des rapports et du budget. Nous sommes à la recherche de membres disposés à combler des postes au sein du conseil d’administration.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align"><strong>PARTAGE DES SEMENCES&nbsp;: </strong> commencera à 20&nbsp;h et sera ouvert au public. Invitez vos amis 
+et apportez vos semences. Divertissement, rafraîchissements, prix de présence et surtout semences gratuites!</li>
+      </ul>
+    </div>
+	
+	<div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">25 NOV 2024 à 18&nbsp;h</p>
+        </li>
+		<li class="w3-padding-16"><b>PARTY DES FÊTES</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Des bouchées froides et du vin seront servis au début de la réunion, suivis d'une démonstration. <strong>Orysia Krywiak</strong> d'<a href="https://www.instagram. com/orysiafleurs" target="_blank">Orysia Fleurs</a> (anciennement Fig Fleurs) réalisera un arrangement hivernal de table. L’œuvre, ainsi que d’autres cadeaux, seront offerts comme prix de présence. Veuillez apporter des gâteries sucrées de Noël pour ajouter à l'ambiance festive. <br>
+            <br>
+          Veuillez apporter  des denrées pour les paniers de Noël pour l'Aide communautaire de Dorval. Soyez généreux. Le Club égalera vos dons.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Pour membres seulement.</li>
+      </ul>
+  </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">28 OCT 2024 à 19&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>PARADE DE MODE CHEZ LES HÉMÉROCALLES</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Danielle Robichaud</strong>. Apprenez à distinguer ces hémérocalles inédites selon leurs formes, motifs, traits comme leurs yeux, mascaras, frisettes, dents, veines et même leurs barbes! Voyez comment hybrider les hémérocalles et amusez-vous lors de cette présentation. Presque la semaine de la mode à Paris!</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation bilingue.</li>
+      </ul>
+  </div>
+</div>
+
+<!-- Events Archive Row 2 -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pastevents2">
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">23 SEPT 2024 à 19&nbsp;h&nbsp;30</p>
+        </li>
+		<li class="w3-padding-16"><b>PRÉPARER SON JARDIN POUR L'HIVER </b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Wanda Mitkiewicz</strong>. Elle précisera les tâches de jardinage qui devraient vous occuper cet automne. Elle parlera des bulbes&nbsp;: ceux à déterrer et à remiser à l'intérieur, ceux à planter à l'extérieur; et des plantes - celles qui peuvent être hivernées à l'intérieur et celles qu'il vaut mieux laisser intactes pour ajouter de l'intérêt à un paysage hivernal; et des arbres et des buissons, du paillis et compostage.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation en anglais.</li>
+      </ul>
+  </div>
+  
+   <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">27 MAI 2024 à 17&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>DÎNER AU BISTRO 19</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p> Le Bistro 19 à Dorval est une destination populaire pour les amateurs de golf (2000 av Reverchon, Dorval).</p>
+        </li>
+		 <li class="w3-padding-16 w3-left-align">Coût&nbsp;: 35&nbsp;$</li>
+      </ul>
+  </div>
+
+<div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">18 MAI 2024 à 9&nbsp;h</p>
+        </li>
+        <li class="w3-padding-16"><b>VENTE ANNUELLE DE VIVACES</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Chaque année le club organise une vente de vivaces ouverte au public pendant la <a href="https://www.ville.dorval.qc.ca/fr/evenements/evenement/journee-de-lenvironnement-et-du-jardinage" target="_blank"><strong>Journée de l'environnement et du jardinage</strong></a> de la Cité de Dorval. Les profits sont utilisés pour soutenir le coût de nos conférenciers et de nos activités. </p>
+        </li>
+		 <li class="w3-padding-16 w3-left-align">Aréna Edgar Rouleau (1450, avenue Dawson)</li>
+      </ul>
+  </div>
+</div>
+
+<!-- Events Archive Row 3 -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pastevents3">
+
+ <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">29 JUIN 2024</p>
+        </li>
+        <li class="w3-padding-16"><b>VOYAGE EN AUTOBUS</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Notre voyage annuel en autocar de luxe est l'occasion de voir quelques-uns  des plus beaux jardins du Québec. La visite comprend trois magnifiques jardins du Centre-du-Québec et de la Montérégie&nbsp;:  <a href="https://www.lesjardinsdevosreves.ca" target="_blank">Les Jardins de vos Rêves</a>, Saint-Ferdinand; <a href="https://www.parcmarievictorin.com" target="_blank">Parc Marie Victorin Jardin botanique</a>, Kingsey Falls; et <a href="https://jardinsdas.ca" target="_blank">Jardin Daniel Seguin</a>, Saint-Hyacinthe. </p>
+        </li>
+		 <li class="w3-padding-16 w3-left-align">Coût&nbsp;: 90&nbsp;$ membres, 100&nbsp;$ non-membres. Chèque seulement.</li>
+		   <li class="w3-padding-16 w3-left-align"> <p align="left"><a href="https://photos.google.com/share/AF1QipPIr5Uq-GpoqZumx6MyggXnakx__W76w-0caYFW4rJUV6-I30jRIOnSQ1jdgGHkRA?key=ZGs5M2tPYkFLZ19aSVhUZUs5WjFEZnA1ajlJemln" target="_blank" class="w3-button w3-teal w3-padding-large">Voir les photos</a></p>
+      </ul>
+  </div>
+  
+   <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">22 AVRIL 2024 à 19&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>ROSIERS RUSTIQUES </b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Diane Vigneault</strong>, présidente de la  Société des Roses du Québec. Elle parlera des rosiers rustiques contemporains et de ce que nous devons savoir pour cultiver des rosiers avec succès&nbsp;: choix du site, exigences du sol, bonnes pratiques de plantation, soins continus, taille, protection hivernale. </p>
+        </li>
+		 <li class="w3-padding-16 w3-left-align">Présentation bilingue.</li>
+      </ul>
+  </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">25 MARS 2024 à 19&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>PLANTES FOSSILES DE L'EST DU CANADA</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Ingrid Birker</strong>, conservatrice à la retraite et coordonnatrice de la sensibilisation scientifique au <a href="https://www.mcgill.ca/redpath/" target="_blank">Musée Redpath</a> (Université McGill), nous parlera de l'évolution  paléobotanique dans l'Est du Canada. À partir  
+d'échantillons de plantes fossiles des collections du musée, elle nous renseignera sur la façon dont d'anciens fossiles ont été utilisés par les écologistes pour reconstituer des espèces végétales entières, l’histoire de leur évolution et leurs environnements passés.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation en anglais.</li>
+        <li class="w3-padding-16 w3-left-align"> <p align="left"><a href="../documents/birker-fossil-plants-eastern-canada-march-24-2024.pdf" target="_blank" class="w3-button w3-teal w3-padding-large">Téléchargez la présentation</a></p>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<!-- Events Archive Row 4 --> 
+<div class="w3-row-padding w3-center w3-padding-64" id="pastevents1">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">23 MARS 2024 à 9&nbsp;h&nbsp;30</p>
+        </li>
+        <li class="w3-padding-16"><b>ATELIER D'ÉLAGAGE</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Jesse Bouchard-Nestor</strong>, arboriculteur expert et enseignant. Il expliquera comment entretenir la santé et la sécurité de nos arbres. Offrez votre jardin et vous aurez un émondage gratuit! En cas de pluie, ce sera au CCSD.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation en anglais. Coût&nbsp;25&nbsp;$</li>
+        </li>
+      </ul>
+  </div>
+  
+  <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">26 FÉV 2024 à 19&nbsp;h&nbsp;30</p>
+        </li>
+		<li class="w3-padding-16"><b>LÉGUMES OUBLIÉS ET VARIÉTÉS PERDUES</b></li>
+        <li class="w3-padding-16 w3-left-align">
+          <p>Présentation par <strong>Lyne Bellemare</strong> de l'entreprise de semences artisanales, <a href="https://terrepromise.ca/en_CA" target="_blank">Terre Promise</a>. Vous pourrez acheter son livre et des semences. Argent comptant seulement.</p>
+        </li>
+        <li class="w3-padding-16 w3-left-align">Présentation bilingue.</li>
+      </ul>
+  </div>
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onClick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous joindre</span></div>
+      <h3>Adresse</h3>
+	  	<p> <strong>Société d'horticulture et d'écologie de Dorval<br>
+        Dorval Horticultural &amp; Ecological Society</strong><br>
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Centre Communautaire Sarto-Desnoyers<br>
+        1335 chemin Bord-du-Lac<br>
+        Dorval, Québec<br>
+		H9S 2E5</p>
+	<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +1 514 633-4000</p>
+	<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> dorvalhort@gmail.com</p>
+	<br><br>
+    </div>
+	
+    <div class="w3-col m7">
+	<img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
+	</div>
+  </div>
+</div>
+
+
+<!-- Image of location/map -->
+<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Nous suivre</h4>
+  <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)" class="w3-button w3-large w3-teal" title="Facebook">
+  <i class="fa fa-facebook"></i></a>
+  <p>© 2025, Société d’horticulture et d’écologie de Dorval - Dorval Horticultural and Ecological Society</p>
+  <p>Propulsé par <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Haut de page</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

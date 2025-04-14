@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Société d’horticulture et d’écologie de Dorval</title>
+<meta charset="UTF-8">
+<meta name="description" content="La Société d’horticulture et d’écologie de Dorval (SHED)  a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  rel="shortcut icon" href="../images/rose.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* unvisited link */
+p a:link {
+  color: teal;
+}
+
+/* visited link */
+p a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+p  a:hover {
+  color: DarkSlateGrey;
+}
+
+/* selected link */
+p  a:active {
+  color: DarkSlateBlue;
+}
+</style>
+</head>
+
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fermez
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+  <a href="executif.html" class="w3-bar-item w3-button">Exécutif</a>
+    <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+  <a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	  <a href="../en/index.html" class="w3-bar-item w3-button">English</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>SHED</a>
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="À propos de la SHED">À propos<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="apropos.html" class="w3-bar-item w3-button">À propos de notre club</a>
+      <a href="apropos.html#history" class="w3-bar-item w3-button">Histoire</a>
+	  <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	  <a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+    </div>
+  </div>
+  <a href="evenements.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Événements</a>
+  <a href="nouvelles.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nouvelles</a>
+  <a href="galerie.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nous joindre</a>
+	<a href="../en/index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">English</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="apropos.html" class="w3-bar-item w3-button">À propos</a>
+    <a href="executif.html" class="w3-bar-item w3-button">Comité exécutif</a>
+	<a href="adhesion.html" class="w3-bar-item w3-button">Adhésion</a>
+	<a href="evenements.html" class="w3-bar-item w3-button">Événements</a>
+    <a href="nouvelles.html" class="w3-bar-item w3-button">Nouvelles</a>
+    <a href="galerie.html" class="w3-bar-item w3-button">Galerie</a>
+    <a href="#contact" class="w3-bar-item w3-button">Nous joindre</a>
+	<a href="../en/index.html" class="w3-bar-item w3-button">English</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="../images/banner-2500x1665-5.jpg" alt="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL" style="width:100%;min-height:350px;max-height:800px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL">SOCIÉTÉ D'HORTICULTURE ET D'ÉCOLOGIE DE DORVAL</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onClick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Société d’horticulture et d’écologie de Dorval</h4>
+     
+    </header><div class="w3-container">
+	 <h5>Notre objectif</h5>
+      <p>La Société a  pour  objet  d’améliorer  et  de  développer  les  connaissances  horticoles  et  écologiques  de  ses  membres tout en contribuant à la santé et à la beauté de l’environnement.</p>
+      <p>Lisez notre <a href="../documents/constitution-dhes-shed-fr.pdf" target="_blank">constitution</a> ou téléchargez notre <a href="../documents/dhes-shed-brochure.pdf" target="_blank">brochure</a> pour en savoir plus sur la SHED.</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>&copy; SHED</p>
+    </footer>
+  </div>
+</div>
+
+<!-- Features Container -->
+<div class="w3-container w3-padding-64 w3-center" id="features">
+<h2 class="w3-text-teal">POUR LE PLAISIR DE JARDINER</h2>
+<h3 class="w3-cursive">Vouée à l’embellissement des propriétés privées de notre ville depuis au-delà de 70 ans</h3>
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <a href="news.html"><img src="../images/avatar-1-150x150.jpg" alt="Nouvelles" border="0" class="w3-circle w3-hover-opacity" style="width:45%"></a>
+  <h3 class="w3-text-teal">Nouvelles</h3>
+  <p><a href="nouvelles.html">Lisez notre bulletin</a> pour<br>
+    rester à l'affût de nos nouvelles</p>
+</div>
+
+<div class="w3-quarter"><a href="about.html"><img src="../images/avatar-2-150x150.jpg" alt="Réunions" border="0" class="w3-circle w3-hover-opacity" style="width:45%"></a>
+  <h3 class="w3-text-teal">Réunions</h3>
+      <p>Découvrez quand auront lieu<br>
+     les <a href="apropos.html">prochaines réunions</a></p>
+</div>
+
+<div class="w3-quarter"><a href="events.html"><img src="../images/avatar-3-150x150.jpg" alt="Événements" border="0" class="w3-circle w3-hover-opacity" style="width:45%"></a>
+  <h3 class="w3-text-teal">Événements</h3>
+    <p>Consultez notre calendrier pour <br>
+      participer à <a href="evenements.html">nos événements</a></p>
+</div>
+
+<div class="w3-quarter"><a href="executive.html"><img src="../images/avatar-4-150x150.jpg" alt="Comité exécutif" border="0" class="w3-circle w3-hover-opacity" style="width:45%"></a>
+  <h3 class="w3-text-teal">Comité exécutif</h3>
+      <p>Rencontrez <a href="executif.html">les membres<br>
+      </a>qui font partie de l'exécutif</p>
+</div>
+
+</div>
+</div>
+
+<!-- Activities Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="activities">
+
+<div class="w3-quarter">
+<h2>À propos de notre club </h2>
+<p>Nous accueillons chaleureusement toutes les personnes qui apprécient les plantes, que ces personnes possèdent ou non des connaissances en horticulture. En vous joignant à notre groupe, vous ferez la connaissance de gens avec qui partager votre passion pour le jardinage, qu’il s’agisse de plantes d’intérieures ou de végétaux qui poussent en pleine terre, en contenants ou à l’extérieur.</p>
+<h5 class="w3-cursive">Aucun talent particulier n’est requis!</h5>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="../images/membership-600x400.jpg" alt="Membership" style="width:100%">
+  <div class="w3-container">
+  <h3 class="w3-text-teal">Adhésion</h3>
+  <p>Notre société offre gratuitement à ses membres la participation aux réunions et conférences mensuelles, les visites de jardins, une vente de vivaces au mois de mai, et des rabais chez plusieurs jardineries et pépinières.</p>
+  <p>15&nbsp;$ pour les résidents de Dorval</p>
+  <p>20&nbsp;$ pour les non-résidents</p>
+  
+		  
+  <p><a href="adhesion.html" class="w3-button w3-teal w3-padding-large">Joindre la SHED</a></p>
+  <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="../images/pollinator-600x400.jpg" alt="Jardin de démonstration de pollinisation" style="width:100%">
+  <div class="w3-container">
+  <h3 class="w3-text-teal">Jardin de pollinisation</h3>
+  <p> Le Jardin de démonstration de pollinisation servira de vitrine éducative pour aider les citoyens de Dorval à en apprendre davantage sur les jardins de pollinisateurs et commémorera également le 70<sup>e</sup> anniversaire du club.</p>
+  <p>Lieu&nbsp;: parc Lawrence Earl</p>
+   <p>Plantation&nbsp;: printemps 2025</p>
+   <p><a href="plantes-indigenes.html" class="w3-button w3-teal w3-padding-large">En savoir plus</a></p>
+  <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="../images/galleries-600x400.jpg" alt="Galeries photos" style="width:100%">
+  <div class="w3-container">
+  <h3 class="w3-text-teal">Galeries photos</h3>
+  <p>Curieux d'en savoir plus sur nos activités? Visionnez des photos de notre ventre annuelle de vivaces, des visites de jardins, des réunions et conférences, et de notre communauté dynamique de passionnées de jardins!</p>
+    <p>2024&nbsp;: Les jardins de vos rêves</p>
+   <p>2023&nbsp;: Sorel et Verchères</p>
+   <p><a href="galerie.html" class="w3-button w3-teal w3-padding-large">Visionnez les photos</a></p>
+  <br>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onClick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Nous joindre</span></div>
+      <h3>Adresse</h3>
+	  	<p> <strong>Société d'horticulture et d'écologie de Dorval<br>
+        Dorval Horticultural &amp; Ecological Society</strong><br>
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Centre Communautaire Sarto-Desnoyers<br>
+        1335 chemin Bord-du-Lac<br>
+        Dorval, Québec<br>
+		H9S 2E5</p>
+	<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +1 514 633-4000</p>
+	<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> dorvalhort@gmail.com</p>
+	<br><br>
+    </div>
+	
+    <div class="w3-col m7">
+	<img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
+	</div>
+  </div>
+</div>
+
+
+<!-- Image of location/map -->
+<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Nous suivre</h4>
+  <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)" class="w3-button w3-large w3-teal" title="Facebook">
+  <i class="fa fa-facebook"></i></a>
+  <p>© 2025, Société d’horticulture et d’écologie de Dorval - Dorval Horticultural and Ecological Society</p>
+  <p>Propulsé par <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Haut de page</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,472 @@
+/* banner */
+header {
+    height: 720px;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+   background-image: url(images/curve-v2-1008px.svg),url(images/short-banner2.jpg);
+    background-position: center bottom -2px,top center;
+    background-size: 101%,cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5rem;
+}
+
+
+/* test */
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .left img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      background: #fff;
+    }
+
+    .right h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .right p {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .right p.bold {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+     .cta-button-banner {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 20px;
+      padding: 14px 24px;
+      background-color: #ffffff;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+        .cta-button-banner:hover {
+      background-color: #f1f5f9; 
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 20px;
+      padding: 14px 24px;
+      background-color: #023255;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #264766;
+    }
+
+/* header text in the banner */
+h1.dh-main{
+    font-family:"Poppins",sans-serif;
+    font-weight:700;
+    font-size: 3.4em;
+    line-height: 1em;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between the elements */
+}
+
+
+
+/* colorful horizontal rule */
+.custom-hr {
+  height: 4px;
+  border: none;
+  background: linear-gradient(to right, red, blue);
+  margin:0;
+
+}
+
+/*overwrite nav bar*/
+.d-button:hover{color:#FFF!important;background-color:#212121!important;}
+
+
+.nav {
+  position: fixed;
+  color: white;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0);
+  transition:
+  transform 0.4s ease-in-out 0.15s,
+  opacity 0.4s ease-in-out 0.15s;
+  transform: translateY(0);
+  opacity: 1;
+  padding-top: 4px;} 
+
+.nav.scrolled {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white; /* keep text color stable */
+}
+
+/* underline effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.3rem;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+/* animate underline on hover */
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+/*mobile navigation */
+
+.nav-link-mobile {
+  position: relative;
+  display: inline-block;
+  padding: 2rem 2rem;
+  margin-left: 2rem;
+  color: black;
+  text-decoration: none;
+  transition: color 1s ease;
+  background-color: #fff;
+}
+
+.nav-link-mobile:hover {
+  color: black; /* keep text color stable */
+}
+
+/* underline effect */
+.nav-link-mobile::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.3rem;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+/* animate underline on hover */
+.nav-link-mobile:hover::after {
+  transform: scaleX(1);
+}
+
+.hamburger {
+  font-size: 2rem;  /* Size of the hamburger */
+  cursor: pointer;
+  color: black;     /* Set icon color to black */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.hamburger:hover {
+  color: #0077cc;  /* Change color on hover (e.g., blue) */
+}
+
+
+.nav-link-theme {
+  background: #fff;
+  border-radius: 8px; /* optional: rounded corners */
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+
+/* round the corner on images */
+.dh-roundedcorner {
+    border-radius: 12px 12px 0px 0px;
+     object-fit: cover;
+}
+
+.dh-roundedcorner2{
+    border-radius: 8px;
+}
+
+/* rounded image container */
+.dh-roundedcorner-container {
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+
+}
+
+/* subheader */
+
+.dh-text-subhead,.dh-hover-text-subhead:hover{color:#5b0728!important;}
+
+.dh-magenta,.dh-hover-magenta:hover{color:#fff!important;background-color:#5b0728!important}
+
+/*.dh-textbox {
+    background-color:#900C3F;
+}*/
+
+/*header {
+    height: 600px;
+    width: 100%;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: #000000;  /* fallback for old browsers *//*
+    background: linear-gradient(rgb(5,38,20,0.8), rgb(7,89,59,0.8)), url("images/short-banner.jpg");  /* Chrome 10-25, Safari 5.1-6 *//*
+    background: linear-gradient(rgb(5,38,20,0.8), rgb(7,89,59,0.8)), url("images/short-banner.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *//*
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+
+.headerpara {
+    display: inline-block;
+    width: 60%;
+}
+
+.subheader {
+    font-size: 1.2em;
+}
+
+
+.dh-margin {
+      padding-left:6%!important;
+    padding-right:6%!important;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dh-padding {
+      padding-left:6%!important;
+    padding-right:6%!important;  
+}
+
+
+
+/* background and text */
+.d-theme-l2 {color:#000 !important; background-color:#f5f5f5 !important}
+
+/*curvy boi*/
+/*
+.curvy-section-header-intro {
+   background-image: url(images/curve-v2-1008px.svg),url(images/short-banner.jpg);
+    height: 280px;
+    width: 100%;
+    background-position: center bottom -2px,top center;
+    background-size: 101%,cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 80em) {
+.curvy-section-header-intro {
+    background-image: url(/getmedia/203baf9e-2285-483a-b739-dcfc8df43bb4/curve-v2-600px),url(/getmedia/d5c463be-f1fc-4125-9df8-87160fce9b5f/RHS-Hilltop-1280x350);
+
+    }
+}
+*/
+
+
+
+/* colors */
+.w3-theme-l5 {color:#000 !important; background-color:#f0f0f0 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#cccccc !important}
+.w3-theme-l3 {color:#fff !important; background-color:#999999 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#666666 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#333333 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#000000 !important}
+.w3-theme-d2 {color:#fff !important;background-color:#000000 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#000000 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#000000 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#000000 !important}
+
+
+.w3-theme-light {color:#000 !important; background-color:#f0f0f0 !important}
+.w3-theme-dark {color:#fff !important; background-color:#000000 !important}
+.w3-theme-action {color:#fff !important; background-color:#000000 !important}
+
+.w3-theme {color:#fff !important; background-color:#000000 !important}
+.w3-text-theme {color:#000000 !important}
+.w3-border-theme {border-color:#000000 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#000000 !important}
+.w3-hover-text-theme:hover {color:#000000 !important}
+.w3-hover-border-theme:hover {border-color:#000000 !important}
+
+
+/*overwrite nav bar*/
+.d-button:hover{color:#FFF!important;background-color:#212121!important;}
+
+
+
+/* body */
+
+body {
+    font-family: "Poppins", serif;
+}
+
+h1 {
+    text-align: left;
+}
+
+/* custom colors */
+.d-white,.d-hover-white:hover{color:#000!important;background-color:#fff!important}
+.d-green,.d-hover-green:hover{color:#fff!important;background-color:#052614!important}
+
+
+/* poppins font */
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+/* card styling */
+.dh-card {
+  box-shadow: 6px 6px 0 0 #51be90;
+}
+
+/* cute arrow */
+
+
+/* Arrow Styling */
+.arrow {
+  margin-left: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+      margin-left: 12px;
+      font-size: 20px;
+      font:inherit;
+}
+
+/* Arrow Movement on Hover */
+.cta-button:hover .arrow { 
+  transform: translateX(6px);
+}
+
+.cta-button-banner:hover .arrow { 
+  transform: translateX(6px);
+}
+
+
+/* bqackground image */
+.subtle-bg {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 2555, 255, 0.9)),url('images/banner-2500x1665-15.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional: gives parallax feel */
+  padding: 100px 20px;
+  color: black; /* or dark depending on the image */
+  position: relative;
+}
+
+.subtle-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  z-index: 0;
+}
+
+.subtle-bg .content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-us {
+  background-color:#f5f5f5;
+}
+
+/*mobile display*/
+@media only screen and (min-width: 800px) {
+    .home-text-header {
+        left: calc(100vw / 60* 6);
+        max-width: 60%;
+        /*top: 55%;*/
+
+    }
+  }
+
+ @media (max-width: 800px) {
+
+      .nav {
+    background-color: #fff; /* blue background on mobile */
+    color: #000; /* white text on mobile */
+    }
+
+          .container {
+        flex-direction: column;
+      }
+
+      .right {
+        border-left: none;
+        padding-top: 20px;
+      }
+
+      .right h1 {
+        font-size: 36px;
+      }
+  }
