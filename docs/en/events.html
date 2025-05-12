@@ -1,410 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <title>Dorval Horticultural &amp; Ecological Society | Events</title>
 <meta charset="UTF-8">
 <meta name="description" content="The Dorval Horticultural &amp; Ecological Society (DHES) aims to improve and develop the horticultural and ecological knowledge of its members, thereby contributing to the health and beauty of our environment.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link  rel="shortcut icon" href="../images/rose.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="shortcut icon" href="../images/dh-logo.png">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../dorvalhortstyles.css">
+<link rel="stylesheet" href="../w3.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 <style>
-/* unvisited link */
-p a:link {
-  color: teal;
-}
-
-/* visited link */
-p a:visited {
-  color: grey;
-}
-
-/* mouse over link */
-p  a:hover {
-  color: DarkSlateGrey;
-}
-
-/* selected link */
-p  a:active {
-  color: DarkSlateBlue;
-}
 </style>
 </head>
 
 <body id="myPage">
-
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onClick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="about.html" class="w3-bar-item w3-button">About</a>
-  <a href="executive.html" class="w3-bar-item w3-button">Executive</a>
-    <a href="membership.html" class="w3-bar-item w3-button">Membership</a>
-  <a href="events.html" class="w3-bar-item w3-button">Events</a>
-    <a href="news.html" class="w3-bar-item w3-button">News</a>
-  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-	  <a href="../fr/evenements.html" class="w3-bar-item w3-button">Français</a>
-</nav>
-
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onClick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>DHES</a>
-   <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="About the DHES">About <i class="fa fa-caret-down"></i></button>     
+<!-- Navbar top -->
+<div class="w3-top nav">
+ <div class="w3-bar w3-left-align dh-padding">
+  <a class="w3-bar-item w3-hide-medium w3-hide-large w3-right hamburger" href="javascript:void(0);" onclick="openNav()">
+  <i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item"><img src="../images/dh-logo.png" alt="logo" width="32" height="32"></a>
+   <!--<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-bar-item2" title="About the DHES">About</button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
       <a href="about.html" class="w3-bar-item w3-button">About our Club</a>
       <a href="about.html#history" class="w3-bar-item w3-button">History</a>
-	  <a href="executive.html" class="w3-bar-item w3-button">Executive Committee</a>
-	  <a href="membership.html" class="w3-bar-item w3-button">Membership</a>
+    <a href="executive.html" class="w3-bar-item w3-button">Executive Committee</a>
+    <a href="membership.html" class="w3-bar-item w3-button">Membership</a>
     </div>
-  </div>
-  <a href="events.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Events</a>
-  <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-  <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Gallery</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-	<a href="../fr/evenements.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Français</a>
+  </div>-->
+  <a href="about.html" class="w3-bar-item nav-link w3-hide-small d-hover-slate">ABOUT</a>
+<a href="events.html" class="w3-bar-item nav-link w3-hide-small d-hover-slate">EVENTS</a>
+  <a href="projects.html" class="w3-bar-item nav-link w3-hide-small d-hover-slate">PROJECTS</a>
+  <a href="resources.html" class="w3-bar-item nav-link w3-hide-small d-hover-slate">RESOURCES</a>
+  <a href="../fr/index.html" class="w3-bar-item nav-link w3-hide-small d-hover-slate">FRANÇAIS</a>
  </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="about.html" class="w3-bar-item w3-button">About our Club</a>
-    <a href="executive.html" class="w3-bar-item w3-button">Executive Committee</a>
-	<a href="membership.html" class="w3-bar-item w3-button">Membership</a>
-	<a href="events.html" class="w3-bar-item w3-button">Events</a>
-    <a href="news.html" class="w3-bar-item w3-button">News</a>
-    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-	<a href="../fr/evenements.html" class="w3-bar-item w3-button">Français</a>
+  <div id="navDemo" class="w3-bar-block nav-link-theme w3-hide w3-hide-large w3-hide-medium">
+  <a href="about.html" class="w3-bar-item nav-link-mobile">ABOUT</a>
+  <a href="events.html" class="w3-bar-item nav-link-mobile">EVENTS</a>
+  <a href="projects.html" class="w3-bar-item nav-link-mobile">PROJECTS</a>
+  <a href="resources.html" class="w3-bar-item nav-link-mobile">RESOURCES</a>
+  <a href="../fr/index.html" class="w3-bar-item nav-link-mobile">FRANÇAIS</a>
   </div>
 </div>
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="../images/banner-2500x1665-8.jpg" alt="DORVAL HORTICULTURAL &amp; ECOLOGICAL SOCIETY" style="width:100%;min-height:350px;max-height:800px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="DORVAL HORTICULTURAL & ECOLOGICAL SOCIETY">DORVAL HORTICULTURAL & ECOLOGICAL SOCIETY</button>
+<div class="w3-display-container w3-animate-opacity header2"><header>  <!--<img src="../images/short-banner.jpg" alt="DORVAL HORTICULTURAL &amp; ECOLOGICAL SOCIETY" style="width:100%;min-height:350px;max-height:800px;">-->
+  <div class="w3-container w3-display-left w3-margin-bottom dh-margin">
+  <p class="home-text-header subheader">Dorval Horticultural &amp; Ecological Society</p> <br> 
+
+   <h1 class="dh-main">Events</h1><br>
+  <!--<a href="membership.html" target="_blank" class="cta-button-banner w3-padding-large">Upcoming events <span class="arrow">➜</span></a>-->
   </div>
-</div>
+
+</header></div>
 
 <!-- Modal -->
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-top">
     <header class="w3-container w3-teal w3-display-container"> 
-      <span onClick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
       <h4>Dorval Horticultural &amp; Ecological Society </h4>
      
     </header><div class="w3-container">
-	 <h5>Our purpose </h5>
+   <h5>Our purpose </h5>
       <p>The object of the Society shall be to improve and develop the horticultural and ecological knowledge of its members, thereby contributing to the health and beauty of our environment.</p>
           <p>Read our <a href="../documents/constitution-dhes-shed-en.pdf" target="_blank">constitution</a> or download our <a href="../documents/dhes-shed-brochure.pdf" target="_blank">brochure</a> to learn more about the DHES.</p>
     </div>
     <footer class="w3-container w3-teal">
-      <p>&copy; DHES</p>
+      <p>© DHES</p>
     </footer>
   </div>
 </div>
 
-<!-- Main Container -->
-<div class="w3-container w3-padding-24 w3-left" id="main">
-<h2 align="center" class="w3-text-teal">EVENTS</h2>
-  <h3 align="center" class="w3-cursive">Join our community</h3>
-  <div class="w3-row"><br>
-<div class="w3-col">
- 
-<h3>Our Monthly Meetings</h3>
-  <p>The Dorval Horticultural and Ecological Society meets on the fourth Monday of the month (September through May, except December) at 7:30 pm at the Sarto-Desnoyers Community Centre, 1335 Lakeshore Drive, Dorval, Quebec.   <a href="https://www.google.ca/maps?f=q&source=embed&hl=en&q=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&aq&sll=45.44005,-73.75386&sspn=0.007257,0.02105&ie=UTF8&geocode=FZ9btQIdopia-w&split=0&hq&hnear=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&ll=45.44005,-73.75386&spn=0.014513,0.0421&t=m&z=14" target="_blank">View Map</a></p>
+<!-- Events -->
+<div class="container dh-padding">
+    
+    <div class="w3-right w3-padding-24">
+      <h2><b>Our Monthly Meetings</b></h2>
+        <p>The Dorval Horticultural and Ecological Society meets on the fourth Monday of the month (September through May, except December) at 7:30 pm at the Sarto-Desnoyers Community Centre, 1335 Lakeshore Drive, Dorval, Quebec.   <a href="https://www.google.ca/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&amp;aq&amp;sll=45.44005,-73.75386&amp;sspn=0.007257,0.02105&amp;ie=UTF8&amp;geocode=FZ9btQIdopia-w&amp;split=0&amp;hq&amp;hnear=Sarto+Desnoyers+Community+Centre,+Dorval,+Communauté-Urbaine-de-Montréal,+Quebec&amp;ll=45.44005,-73.75386&amp;spn=0.014513,0.0421&amp;t=m&amp;z=14" target="_blank">View Map</a></p>
   <ul>
     <li>Monthly meetings feature guest speakers and refreshments. </li>
     <li>Non-members are requested to pay a fee of $5 per person per meeting. </li>
     <li>Bring your own coffee cup to meeting and don’t forget your name tag. </li>
-	<li>Bring a contribution to the give-away table. Anything related to gardening is appreciated. Be prepared to take it home if unclaimed.</li>
+  <li>Bring a contribution to the give-away table. Anything related to gardening is appreciated. Be prepared to take it home if unclaimed.</li>
   </ul>
-</div>
- </div>
-</div>
+    </div>
+  </div>
+
+
+
 
 <!-- Events Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="events">
-    <h2 class="w3-text-teal">UPCOMING EVENTS</h2>
 
-    <div class="w3-third w3-margin-bottom">
-	<img src="../images/renature-montreal-600x400.jpg" alt="Renature Montreal" style="width:100%">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">FEB 24, 2025 @ 7:30 pm</p>
-        </li>
-        <li class="w3-padding-16"><b>RENATURING MONTREAL</b></li>
-        <li class="w3-padding-16 w3-left-align">
-           <p>Presentation by <strong>Oz and Joan Obukuru</strong>, <a href="http://www.renaturemontreal.ca/en/" target="_blank">Renature Montreal</a>. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.</p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">English presentation with bilingual questions.</li>
-      </ul>
-    </div>
+<div class="w3-row-padding w3-padding-32 dh-padding subtle-bg" id="activities">
+   <div class="w3-threequarter">
+<h2><b>Upcoming events</b></h2>
 
-    <div class="w3-third w3-margin-bottom">
-	<img src="../images/jardindepluie-600x400.jpg" alt="Jardins de pluie" style="width:100%">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">MARCH 24, 2025 @ 7:30 pm</p>
-        </li>
-        <li class="w3-padding-16"><b>JARDINS DE PLUIE</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Presentation by <strong>OBV Yamaska</strong>. <a href="https://obv-yamaska.qc.ca/" target="_blank">OBV Yamaska</a> accompagne les citoyens dans la réalisation de leur projet de jardin de pluie.</p>
-
-        </li>
-        <li class="w3-padding-16 w3-left-align">French presentation.</li>
-      </ul>
-  </div>
-  
-  <div class="w3-third w3-margin-bottom">
-  <img src="../images/event-tbd-600x400.jpg" alt="To be determined" style="width:100%">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">AVRIL 28, 2025 @ 7:30 pm</p>
-        </li>
-        <li class="w3-padding-16"><b>TO BE DETERMINED</b></li>
-         <p>.</p>
-        </li>
-        </ul>
-        </li>
-       
-      </ul>
-    </div>
-</div>
-
-<!-- Events Archive Row 1 -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pastevents1">
-    <h2 class="w3-text-teal">PAST EVENTS</h2>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">JAN 27, 2025 @ 7:30 pm</p>
-        </li>
-		<li class="w3-padding-16"><b>ANNUAL GENERAL MEETING</b></li>
-        <li class="w3-padding-16 w3-left-align">
-           <p>The AGM will last a half hour followed by the Seed Share Fest @ 8:00PM. It is important that we have a quorum to approve reports and the budget. We are looking for people to volunteer to sit on the Board.</p>
-        </li>
-        <li class="w3-padding-16 w3-left-align"><strong>SEED SHARE FEST: </strong> Starts at 8:00 pm and is open to the public. Invite your friends and bring your seeds. There will be entertainment, refreshments, door prizes and above all free seeds!</li>
-      </ul>
-    </div>
-	
-	<div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">NOV 25, 2024 @ 6:00 pm</p>
-        </li>
-		<li class="w3-padding-16"><b>HOLIDAY PARTY</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Wine and finger food will be served  at the beginning of the meeting followed at 7:30 pm by a demonstration of how to make a “winter arrangement”. 
-            <strong>Orysia Krywiak</strong>, formerly of FigFleur and now of <a href="https://www.instagram. com/orysiafleurs" target="_blank">Orysia Fleurs</a>, will be our guide. The arrangement and other prizes will be raffled off. Christmas baking is always appreciated for its enhancement of the festive atmosphere.  <br>
-            <br>
-          We will be collecting for Dorval Community Aid Christmas baskets. Please be generous.  The Club will match your contributions. </p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">For members only.</li>
-      </ul>
   </div>
 
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">OCT 28, 2024 @ 7:30 pm</p>
-        </li>
-        <li class="w3-padding-16"><b>DAYLILY FASHION SHOW</b></li>
-        <li class="w3-padding-16 w3-left-align">
-            <p>Presentation by <strong>Danielle Robichaud</strong>. Learn how to recognize rare daylilies by their forms and patterns, their eyes, mascaras, ruffles, teeth, veins and even their beards. See how daylilies are hybridized and have fun with this special presentation. It will be like going to the Paris Fashion Week!</p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">Bilingual presentation.</li>
-      </ul>
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <img src="../images/events-600x400.jpg" alt="Membership" style="width:100%" class="dh-roundedcorner">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
+  </div>
   </div>
 </div>
 
-<!-- Events Archive Row 2 -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pastevents2">
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">SEPT 23, 2024 @ 7:30 pm</p>
-        </li>
-		<li class="w3-padding-16"><b>PUTTING THE GARDEN TO BED</b></li>
-        <li class="w3-padding-16 w3-left-align">
-             <p>Presentation by <strong>Wanda Mitkiewicz</strong>. She will detail the gardening tasks that should keep you busy this fall. She will talk about bulbs – the ones to be dug up  and stored inside, the ones to be planted outdoors; and plants - those that can be overwintered indoors and those that are best left untouched to add interest to a winter scape; and trees and bushes and mulching and composting.</p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">English presentation.</li>
-      </ul>
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <img src="../images/events-600x400.jpg" alt="Membership" style="width:100%" class="dh-roundedcorner">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
   </div>
-  
-   <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">May 27, 2024 @ 5:30 pm </p>
-        </li>
-        <li class="w3-padding-16"><b>DINNER AT BISTRO 19</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Bistro 19 in Dorval is a popular destination for golf enthusiasts (2000 av Reverchon, Dorval).</p>
-        </li>
-		 <li class="w3-padding-16 w3-left-align">Cost: $35</li>
-      </ul>
-  </div>
-
-<div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">MAY 18, 2024 @ 9:00 am</p>
-        </li>
-        <li class="w3-padding-16"><b>ANNUAL PLANT SALE</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Each year the  Club organizes a perennial sale that is open to  the public during the City of Dorval's <a href="https://www.ville.dorval.qc.ca/en/events/event/environment-and-gardening-day" target="_blank"><strong>Environment & Gardening Day</strong></a>. Proceeds are used to support the cost of our speakers and activities. </p>
-        </li>
-		 <li class="w3-padding-16 w3-left-align">Edgar Rouleau Arena (1450, Dawson Avenue)</li>
-      </ul>
   </div>
 </div>
 
-<!-- Events Archive Row 3 -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pastevents3">
-
- <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">JUNE 29, 2024</p>
-        </li>
-        <li class="w3-padding-16"><b>ANNUAL BUS TOUR</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Our annual luxury coach tour is an opportunity to see some of the most beautiful gardens in Quebec. The tour includes three magnificent gardens in the Centre-du-Québec and Montérégie regions:  <a href="https://www.lesjardinsdevosreves.ca" target="_blank">Les Jardins de vos Rêves</a>, Saint-Ferdinand; <a href="https://www.parcmarievictorin.com" target="_blank">Marie Victorin Park Botanical Garden</a>, Kingsey Falls; and <a href="https://jardinsdas.ca" target="_blank">Daniel Seguin Garden</a>, Saint-Hyacinthe. </p>
-        </li>
-		 <li class="w3-padding-16 w3-left-align">Cost: $90 for members, $100 for non-members. Cheques only.</li>
-		  <li class="w3-padding-16 w3-left-align"> <p align="left"><a href="https://photos.google.com/share/AF1QipPIr5Uq-GpoqZumx6MyggXnakx__W76w-0caYFW4rJUV6-I30jRIOnSQ1jdgGHkRA?key=ZGs5M2tPYkFLZ19aSVhUZUs5WjFEZnA1ajlJemln" target="_blank" class="w3-button w3-teal w3-padding-large">View photos</a></p>
-      </ul>
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <img src="../images/events-600x400.jpg" alt="Membership" style="width:100%" class="dh-roundedcorner">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
   </div>
-  
-   <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">APRIL 22, 2024 @ 7:30 pm</p>
-        </li>
-        <li class="w3-padding-16"><b>HARDY ROSES</b></li>
-        <li class="w3-padding-16 w3-left-align">
-        <p>Presentation by <strong>Diane Vigneault</strong>, president of the Quebec Rose Society, on today’s hardy roses, their care and integration into your garden.  She will talk about the things you need to know to grow roses successfully: site selection, soil requirements, proper planting practices, on-going care, pruning, winter protection.</p>
-        </li>
-		 <li class="w3-padding-16 w3-left-align">Bilingual presentation.</li>
-      </ul>
-  </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">MARCH 25, 2024 @ 7:30 pm</p>
-        </li>
-        <li class="w3-padding-16"><b>FOSSIL PLANTS OF EASTERN CANADA</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Presentation by <strong>Ingrid Birker</strong>, the retired curator and science outreach coordinator at the <a href="https://www.mcgill.ca/redpath/" target="_blank">Redpath Museum</a>  (McGill University). She will talk about the palaeobotanical evolution of eastern Canada. Using samples of fossil plants from the  Museum collections, she will show us how ancient fossils have been used by ecologists to reconstruct entire plant species, their evolutionary history, and past environments. </p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">English presentation.</li>
-        <li class="w3-padding-16 w3-left-align"> <p align="left"><a href="../documents/birker-fossil-plants-eastern-canada-march-24-2024.pdf" target="_blank" class="w3-button w3-teal w3-padding-large">Download presentation</a></p>
-        </li>
-      </ul>
   </div>
 </div>
 
-<!-- Events Archive Row 4 --> 
-<div class="w3-row-padding w3-center w3-padding-64" id="pastevents1">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">23 MARS 2024 à 9&nbsp;h&nbsp;30</p>
-        </li>
-        <li class="w3-padding-16"><b>PRUNING WORKSHOP</b></li>
-        <li class="w3-padding-16 w3-left-align">
-          <p>Presentation by <strong>Jesse Bouchard-Nestor</strong>, expert arborist and teacher. He will guide us through good pruning practices. Offer up your garden and you will get free pruning! In case of rain, workshop will take place at SDCC.</p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">English presentation. Cost: $25</li>
-        </li>
-      </ul>
+</div>
+
+<!-- Past events Row -->
+
+<div class="w3-row-padding w3-padding-32 dh-padding " id="activities">
+   <div class="w3-threequarter">
+<h2><b>Past events</b></h2>
+
   </div>
-  
-  <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">FEB 26, 2024 @ 7:30 pm</p>
-        </li>
-		<li class="w3-padding-16"><b>FORGOTTEN VEGETABLES & LOST VARIETIES</b></li>
-        <li class="w3-padding-16 w3-left-align">
-           <p>Presentation by <strong>Lyne Bellemare</strong> of the artisanal seed company, <a href="https://terrepromise.ca/en_CA" target="_blank">Terre Promise</a>. She will also have seeds and books for sale. Cash only.</p>
-        </li>
-        <li class="w3-padding-16 w3-left-align">Bilingual  presentation.</li>
-      </ul>
+
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <div class="w3-container">
+  <h4>JAN 27, 2025 @ 7:30 pm</h4>
+  <h3>Annual general meeting</h3>
+  <p>
+
+The AGM will last a half hour followed by the Seed Share Fest @ 8:00PM. It is important that we have a quorum to approve reports and the budget. We are looking for people to volunteer to sit on the Board.
+<br><br>English presentation.
+</p>
+  <br>
+  </div>
   </div>
 </div>
 
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onClick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
+  </div>
+  </div>
+</div>
+
+
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <div class="w3-container">
+  <h4>JAN 27, 2025 @ 7:30 pm</h4>
+  <h3>Annual general meeting</h3>
+  <p>
+
+The AGM will last a half hour followed by the Seed Share Fest @ 8:00PM. It is important that we have a quorum to approve reports and the budget. We are looking for people to volunteer to sit on the Board.
+<br><br>English presentation.
+</p>
+  <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-third w3-padding-32">
+<div class="dh-card w3-white dh-roundedcorner-container">
+  <div class="w3-container">
+  <h4>FEB 24, 2025 @ 7:30 pm</h4>
+  <h3>Renaturing montreal</h3>
+  <p>Presentation by Oz and Joan Obukuru, Renature Montreal. They will talk about their ambitious projects planting with native plants, controlling invasives, and the importance of biodiversity and encouraging the bird population.<br><br>English presentation.
+</p>
+  <br>
+  </div>
+  </div>
+</div>
+
+
+
 </div>
 
 
 <!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
+<div class="w3-container w3-padding-32 dh-margin contact-us" id="contact">
+  <div class="w3-row"> <h2><b>Contact Us</b></h2>
     <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
       <h3>Address</h3>
-	  	<p> <strong>Dorval Horticultural &amp; Ecological Society<br>
+      <p> <strong>Dorval Horticultural &amp; Ecological Society<br>
         Société d'horticulture et d'écologie de Dorval</strong><br>
-    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Sarto Desnoyers Community Centre<br>
+    </p><p><i class="fa fa-map-marker" dh-text-subhead="" w3-xlarge"=""></i>  Sarto Desnoyers Community Centre<br>
         1335 Lakeshore Drive<br>
         Dorval, Québec<br>
-		H9S 2E5</p>
-	<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +1 514 633-4000</p>
-	<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> dorvalhort@gmail.com</p>
-	<br><br>
+    H9S 2E5</p>
+  <p><i class="fa fa-phone" dh-text-subhead="" w3-xlarge"=""></i> +1 514 633-4000</p>
+  <p><i class="fa fa-envelope-o" dh-text-subhead="" w3-xlarge"=""></i> dorvalhort@gmail.com</p>
+  <br><br>
     </div>
-	
-   <div class="w3-col m7">
-		<img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
-	</div>
+    <h3>Follow us</h3>
+      <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)"="" class="cta-button" title="Facebook">
+  <i class="fa fa-facebook"></i></a>
+  <br><br>
+    </div>
+  
+    <!--<div class="w3-col m7">
+  <img src="../images/DHES-SHED-Logo-800x293.png" alt="DHES" style="width:100%">    
+  </div>-->
   </div>
-</div>
 
 
 <!-- Image of location/map -->
-<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">
+<!--<img src="../images/pollinator-garden-1489x838.jpg" alt="Demonstration Pollinator Garden" class="w3-image w3-greyscale-min" style="width:100%;">-->
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a href="https://www.facebook.com/DorvalHorticulturalEcologicalSociety" "javascript:void(0)" class="w3-button w3-large w3-teal" title="Facebook">
-  <i class="fa fa-facebook"></i></a>
   <p>© 2025, Dorval Horticultural and Ecological Society – Société d’horticulture et d’écologie de Dorval</p>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
 
 <script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
 // Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
   var x = document.getElementById("navDemo");
@@ -414,7 +287,30 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+// used to hide and show the top navigation
+
+let lastScrollY = window.scrollY;
+const nav = document.querySelector(".nav");
+const scrollThreshold = 100;
+
+window.addEventListener("scroll", function () {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY <= scrollThreshold) {
+    // At the top: always show the nav
+    nav.classList.remove("scrolled");
+  } else if (currentScrollY > lastScrollY) {
+    // Scrolling down
+    nav.classList.add("scrolled");
+  } else {
+    // Scrolling up
+    nav.classList.remove("scrolled");
+  }
+
+  lastScrollY = currentScrollY;
+});
 </script>
 
-</body>
-</html>
+
+</body></html>
